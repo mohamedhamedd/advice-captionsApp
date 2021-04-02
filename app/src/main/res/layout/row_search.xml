@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.armcha.elasticview.ElasticView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="20dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_alignParentStart="true"
+            android:id="@+id/row_advice_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:fontFamily="@font/comicsans"
+            android:text="The most delicious cocktails often have the highest alcohol content. Always pace yourself to preserve your dignity."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:layout_toLeftOf="@+id/row_img"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/row_img"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_robot" />
+
+    </RelativeLayout>
+
+</io.armcha.elasticview.ElasticView>

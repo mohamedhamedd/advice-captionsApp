@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".views.search.SearchActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp">
+
+        <EditText
+            android:id="@+id/search_text_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="10dp"
+            android:layout_toLeftOf="@+id/search_btn_search"
+            android:background="@drawable/round_search_edit_text"
+            android:drawableStart="@drawable/ic_search_icon_edit_text"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/comicsans"
+            android:hint="Search by Keywords, Love, Spiders"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="12dp"
+            android:textSize="15sp" />
+
+        <io.armcha.elasticview.ElasticView
+            android:id="@+id/search_btn_search"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:backgroundTint="@color/green"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_search_icon" />
+
+        </io.armcha.elasticview.ElasticView>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/error_text_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Null"
+        android:visibility="gone"
+        android:background="#F84343"
+        android:textColor="#ffff"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:textSize="13dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
