@@ -73,4 +73,7 @@ dependencies {
 
     //Intent Animation
     implementation 'com.github.hajiyevelnur92:intentanimation:1.0'
+
+    //start app
+    implementation 'com.startapp:inapp-sdk:4.8.7'
 }

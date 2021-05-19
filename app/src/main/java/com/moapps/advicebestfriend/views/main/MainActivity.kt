@@ -8,6 +8,7 @@ import android.view.View
 import com.moapps.advicebestfriend.R
 import com.moapps.advicebestfriend.views.random.RandomActivity
 import com.moapps.advicebestfriend.views.search.SearchActivity
+import com.startapp.sdk.adsbase.StartAppAd
 import kotlinx.android.synthetic.main.activity_main.*
 import maes.tech.intentanim.CustomIntent
 
@@ -15,6 +16,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        StartAppAd.disableSplash()
 
         hideSystemUI(this)
 
